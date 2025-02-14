@@ -1,0 +1,3 @@
+git+https://github.com/git-lfs/git-lfs.git
+git+https://github.com/KumarRobotics/ublox.git
+
