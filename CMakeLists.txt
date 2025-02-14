@@ -51,6 +51,7 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
   FILES
   CANOutput.msg
+  SystemStatus.msg
 )
 
 ## Generate services in the 'srv' folder

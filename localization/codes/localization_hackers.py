@@ -2,7 +2,6 @@
 
 import rospy
 from ublox_msgs.msg import NavPVT
-import threading
 import random
 import math
 

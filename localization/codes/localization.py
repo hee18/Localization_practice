@@ -239,8 +239,8 @@ class Localization:
             self.update_corr_hdg() # update corr_hdg variable
             self.calculate_pos_error() # calculate pos error
             self.calculate_hdg_error() # calculate hdg error
-            # self.update_plot(target="POS") # plot (choose: POS, HDG)
-            self.update_plot(target="HDG") # plot (choose: POS, HDG)
+            self.update_plot(target="POS") # plot (choose: POS, HDG)
+            # self.update_plot(target="HDG") # plot (choose: POS, HDG)
 
             if self.corr_hdg is not None and self.corr_pos is not None:
                 self.RH.publish(self.corr_hdg, self.corr_pos)
