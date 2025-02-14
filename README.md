@@ -13,4 +13,6 @@ git clone https://github.com/n-submarine/Localization_practice.git
 cd ..    
 catkin_make  
 source devel/setup.bash
+cd src/Localization_practice
+pip install -r requirements.txt
 ```
