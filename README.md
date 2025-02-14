@@ -8,7 +8,7 @@ git lfs install
 cd /catkin_ws/src  
 git clone https://github.com/n-submarine/Localization_practice.git  
 git clone https://github.com/KumarRobotics/ublox.git  
-cd ..
+cd ..  
 rosdep install --from-paths src --ignore-src -r -y  
 catkin_make  
 source devel/setup.bash
