@@ -13,8 +13,7 @@ sudo apt install ros-noetic-ublox
 
 ## 2️⃣ 워크스페이스 구축
 ```bash
-mkdir catkin_ws && cd catkin_ws
-mkdir src && cd src
+mkdir -p ~/catkin_ws/src && cd catkin_ws/src  
 catkin_init_workspace
 cd ..
 catkin_make
@@ -25,7 +24,7 @@ source ~/.bashrc
 
 ## 3️⃣ 프로젝트 클론 및 의존성 설치
 ```bash
-cd /catkin_ws/src  
+cd ~/catkin_ws/src  
 git clone https://github.com/n-submarine/Localization_practice.git     
 cd ..    
 catkin_make  
