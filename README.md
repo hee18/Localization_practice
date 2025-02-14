@@ -1,4 +1,7 @@
-# Localization Practice!
+# Localization Practice!  
+실습환경: ubuntu 20.04 및 ros-noetic  
+실습하실 분들은 위의 환경 구현을 권장드립니다.   
+
 ## 1️⃣ 필수 패키지 설치
 ```bash
 sudo apt update && sudo apt install -y git-lfs  
