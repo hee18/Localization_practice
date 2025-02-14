@@ -5,6 +5,10 @@ git lfs install
 
 
 ## 2️⃣ 프로젝트 클론 및 의존성 설치
+cd /catkin_ws/src  
 git clone https://github.com/n-submarine/Localization_practice.git  
-cd Localization_practice  
-pip install -r requirements.txt
+git clone https://github.com/KumarRobotics/ublox.git  
+cd ..
+rosdep install --from-paths src --ignore-src -r -y  
+catkin_make  
+source devel/setup.bash
