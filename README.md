@@ -9,10 +9,8 @@ sudo apt install ros-noetic-ublox
 ## 2️⃣ 프로젝트 클론 및 의존성 설치
 ```bash
 cd /catkin_ws/src  
-git clone https://github.com/n-submarine/Localization_practice.git  
-git clone https://github.com/KumarRobotics/ublox.git    
-cd ..  
-rosdep install --from-paths src --ignore-src -r -y  
+git clone https://github.com/n-submarine/Localization_practice.git     
+cd ..    
 catkin_make  
 source devel/setup.bash
 ```
