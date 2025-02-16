@@ -32,3 +32,16 @@ source devel/setup.bash
 cd src/Localization_practice
 pip install -r requirements.txt
 ```
+
+
+## 4️⃣ 측위 프로젝트 실습 (터미널 창 3개 띄워놓고 진행)
+```bash
+# 1st window
+cd ~/catkin_ws/src/Localization_practice/localization/bagfiles
+rosbag play practice_data.bag
+# 2nd window
+cd ~/catkin_ws/src/Localization_practice/localization/codes
+python3 localization_hackers.py
+# 3rd window
+cd ~/catkin_ws/src/Localization_practice/localization/codes
+python3 localization.py```
