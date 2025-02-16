@@ -30,7 +30,7 @@ cd ..
 catkin_make  
 source devel/setup.bash
 cd src/Localization_practice
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 
