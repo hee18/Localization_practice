@@ -37,6 +37,7 @@ pip3 install -r requirements.txt
 ## 4️⃣ 측위 프로젝트 실습 (터미널 창 3개 띄워놓고 진행)
 ```bash
 # 1st window
+# 만약 bagfile을 play할 때 오류가 발생한다면 convert_CAN_bag.py 실행시켜서 다른 이름으로 bagfile 저장하고 다시 play
 cd ~/catkin_ws/src/Localization_practice/localization/bagfiles
 rosbag play practice_data.bag
 
