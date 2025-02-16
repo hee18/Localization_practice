@@ -39,9 +39,14 @@ pip install -r requirements.txt
 # 1st window
 cd ~/catkin_ws/src/Localization_practice/localization/bagfiles
 rosbag play practice_data.bag
+
+
 # 2nd window
 cd ~/catkin_ws/src/Localization_practice/localization/codes
 python3 localization_hackers.py
+
+
 # 3rd window
 cd ~/catkin_ws/src/Localization_practice/localization/codes
-python3 localization.py```
+python3 localization.py
+```
