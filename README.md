@@ -39,17 +39,14 @@ pip3 install -r requirements.txt
 # 1st window
 roscore
 
-
 # 2nd window
 # if rosbag play 오류 발생 => convert_CAN_bag.py 실행시켜서 다른 이름으로 bagfile 저장하고 다시 play
 cd ~/catkin_ws/src/Localization_practice/localization/bagfiles
 rosbag play practice_data.bag
 
-
 # 3rd window
 cd ~/catkin_ws/src/Localization_practice/localization/codes
 python3 localization_hackers.py
-
 
 # 4th window
 cd ~/catkin_ws/src/Localization_practice/localization/codes
