@@ -1,7 +1,6 @@
 import math
 import rospy
 import matplotlib.pyplot as plt
-
 import time
 import sys
 import signal

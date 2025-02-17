@@ -38,7 +38,6 @@ class ROSHandler():
         self.hAcc = None
         self.headAcc = None
 
-        self.timestamp = rospy.Time(0)
 
     def set_protocol(self):
         rospy.Subscriber('/ublox/navpvt', NavPVT, self.ori_cb)
@@ -51,12 +50,8 @@ class ROSHandler():
 
     def set_params(self):
         self.steer_scale_factor = 32.2/450  # wheel max angle / handle max angle
-
-        self.s_params = [-1.69519446e-01, 3.14832448e-02, -2.42469118e-04, 1.68413777e-06]
-        self.c_params = [-3.04750083e-01, 4.43420297e-02, -6.07069742e-04, 4.46079605e-06]
         self.params = [-8.38357609e-03, 2.37367164e-02, -1.59672708e-04, 1.53623118e-06]
 
-        # base_lla = [35.65492524, 128.39351431, 7] # KIAPI_Racing base
         while 1: 
             if self.base_lla is not None:
                 proj_wgs84 = Proj(proj='latlong', datum='WGS84') 
@@ -103,9 +98,6 @@ class ROSHandler():
 
     def canoutput_cb(self, msg): # gain velocity, steering angle
         self.canoutput_update()
-        # vRR = float(msg.WHEEL_SPD_RR.data)
-        # vRL = float(msg.WHEEL_SPD_RL.data) 
-        # self.can_velocity = (vRR + vRL)/7.2 # [m/s]
         self.can_velocity = float(msg.VS.data)
         self.corr_can_velocity = (self.can_velocity*3.6 \
                                   + self.params[0] + self.params[1]*(self.can_velocity*3.6) \
