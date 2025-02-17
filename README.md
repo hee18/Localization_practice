@@ -1,5 +1,5 @@
 # Localization Practice!  
-실습환경: ubuntu 20.04 및 ros-noetic  
+[실습환경: ubuntu 20.04 및 ros-noetic]  
 **실습하실 분들은 위의 환경 구현을 먼저 완료하신 후 아래 절차를 따르시면 됩니다.  
 현재 이미 다른 버전의 우분투나 ros를 사용중이시라 위의 환경 구현이 어렵다면 Docker를 이용한 가상환경 구축을 권장드립니다.**   
 
@@ -37,6 +37,7 @@ pip3 install -r requirements.txt
 ## 4️⃣ 측위 프로젝트 실습 (터미널 창 3개 띄워놓고 진행)
 ```bash
 # 1st window
+# if rosbag play 오류 발생 => convert_CAN_bag.py 실행시켜서 다른 이름으로 bagfile 저장하고 다시 play
 cd ~/catkin_ws/src/Localization_practice/localization/bagfiles
 rosbag play practice_data.bag
 
